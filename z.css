@@ -1753,13 +1753,13 @@ h3{
         gap:15px;
     }
 
-    .Foryou .vf,
-    .Foryou .birth,
-    .Foryou .Event,
-    .Foryou .forr{
-        width:100%;
-        max-width:340px;
-    }
+   .Foryou .vf,
+.Foryou .birth,
+.Foryou .Event,
+.Foryou .forr{
+    width: 45%;
+    min-height: 250px;
+}
 
     .Foryou img{
         height:180px;
