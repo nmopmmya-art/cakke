@@ -58,13 +58,17 @@ back.forEach(el => {
     el.addEventListener("click", function (e) {
 
         e.stopPropagation();
-
-      cop.forEach(i => {
-    i.style.display = "flex";
+cop.forEach(i => {
+    i.style.removeProperty("display");
     i.classList.remove("open");
-    i.querySelector(".wsf").style.display = "block";
-    i.querySelector(".hidee").style.display = "none";
+
+    let title = i.querySelector(".wsf");
+    let detail = i.querySelector(".hidee");
+
+    if (title) title.style.display = "block";
+    if (detail) detail.style.display = "none";
 });
+     
 
         // 🔥 رجوع حسب الصفحة السابقة
        if (currentView === "product") {
